@@ -45,6 +45,15 @@ public class Main {
             total = total + deposit;
             System.out.println("Месяц " + j + ", сумма накоплений равна " + total);
         }
-        System.out.println("Годовое накопление равно " +total);
+        System.out.println("Годовое накопление равно " + total);
+        // Задача 3.2
+        System.out.println("Задача 3.2");
+        double totalWithPercent = 0;
+        double percent = 0.01;
+        for (int j = 1; j <= 12 ; j++) {
+            totalWithPercent = (totalWithPercent + deposit) * (1 + percent);
+            System.out.println("Месяц " + j + ", сумма накоплений равна " + totalWithPercent);
+        }
+        System.out.println("Годовое накопление равно " + totalWithPercent);
     }
 }
